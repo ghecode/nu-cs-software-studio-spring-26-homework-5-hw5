@@ -60,4 +60,8 @@ group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
   gem "selenium-webdriver"
+  gem "simplecov", require: false
+  gem "rspec-rails"
+  gem "cucumber-rails", require: false
+  gem "database_cleaner-active_record"  # cucumber-rails needs this
 end
