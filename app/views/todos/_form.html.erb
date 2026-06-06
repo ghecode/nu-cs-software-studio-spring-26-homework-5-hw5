@@ -17,6 +17,14 @@
   </div>
 
   <div>
+    <%= form.label :category, style: "display: block" %>
+    <%= form.select :category,
+          Todo::CATEGORIES,
+          { include_blank: "— Select a category —" },
+          {} %>
+  </div>
+
+  <div>
     <%= form.submit %>
   </div>
 <% end %>
